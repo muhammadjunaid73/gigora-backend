@@ -151,7 +151,7 @@ print(
 )
 
 _key_cycle = itertools.cycle(GEMINI_API_KEYS)
-GEMINI_MODEL_NAME = "gemini-2.0-flash"
+GEMINI_MODEL_NAME = "gemini-2.0-flash-lite"
 
 def get_next_gemini_client():
     """Returns a new Gemini client with the next API key"""
