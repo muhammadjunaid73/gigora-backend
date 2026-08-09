@@ -117,7 +117,7 @@ if importlib.util.find_spec("stripe_checkout") is not None:
     stripe_router = getattr(stripe_module, "router", None)
 
 if model_compare_router is not None:
-    app.include_router(model_compare_router)
+    app.include_router(model_compare_router, prefix="/api")
 
 if stripe_router is not None:
     app.include_router(stripe_router)

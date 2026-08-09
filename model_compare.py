@@ -154,7 +154,7 @@ async def call_cohere(client: httpx.AsyncClient, prompt: str) -> dict:
         return {"model": "Cohere (Command R+)", "proposal": "", "speed_ms": round((time.perf_counter() - start) * 1000), "error": str(err)}
 
 
-@router.post("/api/model-compare")
+@router.post("/model-compare")
 async def model_compare(req: ModelCompareRequest):
     prompt = build_prompt(req)
 
