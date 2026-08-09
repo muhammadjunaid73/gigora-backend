@@ -2,12 +2,15 @@ import os
 import json
 import itertools
 from typing import Any, List
+from dotenv import load_dotenv
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from supabase_auth import datetime
 
+
+load_dotenv()
 # ============================================================
 # STRIPE IMPORT (with fallback)
 # ============================================================
