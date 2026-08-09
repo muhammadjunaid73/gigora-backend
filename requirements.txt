@@ -4,4 +4,4 @@ python-dotenv
 pydantic
 stripe
 supabase
-google-generativeai
+google-genai

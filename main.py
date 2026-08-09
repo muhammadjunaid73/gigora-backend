@@ -6,13 +6,7 @@ from typing import Any, List
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from dotenv import load_dotenv
 from supabase_auth import datetime
-
-# ============================================================
-# LOAD ENVIRONMENT VARIABLES FIRST
-# ============================================================
-load_dotenv()
 
 # ============================================================
 # STRIPE IMPORT (with fallback)
